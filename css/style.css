@@ -345,6 +345,7 @@ nav ul li a.active {
   color: #2db34a;
   text-decoration: underline;
 }
+
 .footer {
   background: #0f2e1c;
   text-align: center;
@@ -374,4 +375,26 @@ nav ul li a.active {
 .required-fields {
   font-size: 0.92rem;
   margin-bottom: 0.4rem;
+}
+
+@media (max-width: 768px) {
+  .cards-grid,
+  .games-grid {
+    grid-template-columns: 1fr !important;
+  }
+    .about .container,
+  .nav-bar {
+    flex-direction: column !important;
+  }
+    #contact .container {
+    grid-template-columns: 1fr !important;
+  }
+    .hero-text h2 {
+    font-size: 2rem;
+  }
+    .about,
+  .category-section,
+  #contact {
+    padding: 2rem 0;
+  }
 }
