@@ -398,3 +398,114 @@ nav ul li a.active {
     padding: 2rem 0;
   }
 }
+
+@media (max-width: 480px) {
+  .nav-bar {
+    flex-direction: column !important;
+  }
+  nav ul {
+    flex-direction: column !important;
+    gap: 0.5rem !important;
+  }
+  nav ul li a {
+    font-size: 0.8rem !important;
+  }
+  .hero-text h2 {
+    font-size: 1.75rem !important;
+  }
+  .about .container {
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+  .about {
+    padding: 2rem 0 !important;
+  }
+  .game-card h3 {
+    font-size: 1rem !important;
+  }
+  .game-card p {
+    font-size: 0.85rem !important;
+    padding: 0 0.5rem 0.75rem !important;
+  }
+  #contact .container {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+  #contact {
+    padding: 2rem 0 !important;
+  }
+  #contact h2 {
+    font-size: 1.5rem !important;
+    margin-bottom: 1rem !important;
+  }
+  #contact form,
+  .contact-info {
+    padding: 1rem !important;
+  }
+}
+
+
+@keyframes slideInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%,100% { transform: scale(1); }
+  50%     { transform: scale(1.05); }
+}
+
+@keyframes sendPulse {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-100%); }
+  to   { transform: translateY(0); }
+}
+
+
+.game-card {
+  animation: slideInUp 0.5s ease both;
+}
+.btn:hover {
+  animation: pulse 1s ease infinite;
+}
+.send-pulse {
+  animation: sendPulse 0.3s ease both;
+}
+.success-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #2db34a;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  transform: translateY(-100%);
+  z-index: 999;
+}
+.success-banner.show {
+  animation: slideDown 0.5s ease forwards;
+}
+
+@keyframes hoverGrow {
+  0% {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    filter: brightness(1);
+  }
+  100% {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    filter: brightness(0.98);
+  }
+}
+.game-card:hover,
+.cards-grid a:hover {
+  animation: hoverGrow 0.3s ease forwards;
+  cursor: pointer;
+}
