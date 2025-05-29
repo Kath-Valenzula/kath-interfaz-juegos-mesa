@@ -86,6 +86,6 @@ Desarrollado como parte de la asignatura Desarrollo Full Stack II (DSY2202) – 
 
 Contacto del Desarrollador
 Kath Stark
-Correo: contactanos@kath.cl
+Correo: katherinevalenzuela91@gmail.com
 Repositorio: github.com/Kath-Valenzula/kath-interfaz-juegos-mesa
 Ciudad: Valparaíso, Chile
