@@ -1,91 +1,124 @@
-KATH.cl – Boutique Digital de Juegos de Mesa
+# KATH.cl – Interfaz Web para Tienda de Juegos de Mesa
 
-Descripción General
+Este repositorio contiene el desarrollo de una aplicación web para la tienda ficticia **KATH.cl**, realizada como parte de la asignatura **Desarrollo Full Stack II (DSY2202)** en Duoc UC.
 
-KATH.cl es una tienda virtual dedicada a la promoción y venta de juegos de mesa, diseñada como escaparate digital donde convergen la sofisticación visual y la funcionalidad web. Este proyecto busca ofrecer una experiencia de usuario atractiva, intuitiva y profesional, aplicando las mejores prácticas en desarrollo web frontend.
+---
 
-Características Principales
+## Descripción General
 
-Interfaz Moderna y Atractiva:
-Diseño elegante con fondos oscuros, tipografía clara y fotografías en tonos cálidos para una experiencia visual agradable y sofisticada.
+El proyecto consiste en una interfaz gráfica moderna y responsiva, orientada a la gestión y promoción de juegos de mesa. La aplicación permite a los usuarios explorar el catálogo por categorías y realizar su registro en el sistema, facilitando la futura asignación de recompensas y la gestión de compras.
 
-Navegación Clara:
-Menú fijo, navegación semántica y tarjetas interactivas que permiten acceder fácilmente a cada categoría y ficha de producto.
+---
 
-Ficha de Producto Detallada:
-Cada juego cuenta con su propia página de detalle, que incluye imagen, descripción, precio y descuentos cuando corresponda.
+## Funcionalidades Principales
 
-Formulario de Contacto:
-Implementado con validación y consentimiento explícito, adaptado a dispositivos móviles y de escritorio.
+* **Menú de navegación fijo y responsivo**
+  Acceso rápido a las secciones principales del sitio.
 
-Experiencia Dinámica:
-Animaciones CSS y un script JS sencillo aportan dinamismo sin sobrecargar la experiencia.
+* **Presentación de categorías**
+  Catálogo visual de juegos: Estrategia, Familiar, Cartas y Fiesta.
 
-Estructura del Proyecto
+* **Tarjetas de producto**
+  Visualización atractiva de los juegos disponibles.
 
-├── index.html                # Página principal: bienvenida, categorías y acceso a productos.
-├── detalle-*.html            # Fichas individuales para cada juego.
+* **Formulario de registro de usuario**
+
+  * Validación avanzada mediante JavaScript (campos obligatorios, formato de correo, edad mínima, requisitos de contraseña).
+  * Uso de clases Bootstrap (`form-control`, `btn`) en el formulario para estandarización visual y cumplimiento de buenas prácticas.
+  * Mensajes personalizados de error y éxito.
+  * Remarcado visual de campos con errores.
+
+* **Datos de contacto y horarios de atención**
+  Información clara y visible para los usuarios.
+
+* **Pie de página institucional**
+  Incluye derechos reservados y el año de desarrollo.
+
+* **Logo personalizado**
+  Integración del logo de la tienda en el encabezado para refuerzo de marca.
+
+---
+
+## Tecnologías Utilizadas
+
+* **HTML5**
+* **CSS3**
+* **Bootstrap 5** 
+* **JavaScript (ES6)**
+
+---
+
+## Estructura del Proyecto
+
+```
+/
+├── index.html
 ├── css/
-│   └── style.css             # Estilos globales, responsividad, variables y animaciones.
+│   └── style.css
 ├── js/
-│   └── script.js             # Acordeones y animaciones menores.
-├── img/                      # Imágenes optimizadas para carga rápida y buena visualización.
+│   └── script.js
+├── img/
+│   └── kath.cl.png
+│   └── ... (otras imágenes y capturas)
+└── README.md
+```
 
-Resumen de Archivos
+---
 
-index.html
-Presenta la marca y da acceso a las diferentes categorías a través de tarjetas visuales y enlaces.
+## Instrucciones de Uso
 
-detalle-*.html
-Página exclusiva de cada juego, con toda la información relevante y una llamada a contacto.
+1. **Clonar el repositorio:**
 
-css/style.css
-Incluye variables CSS, uso de Flexbox y Grid, media queries para diseño responsivo y animaciones personalizadas.
+   ```bash
+   git clone https://github.com/Kath-Valenzula/kath-interfaz-juegos-mesa.git
+   ```
 
-js/script.js
-Añade interactividad mediante animaciones de formularios y acordeones.
+2. **Abrir el archivo `index.html`** en su navegador web preferido para visualizar la aplicación.
 
-img/
-Almacena imágenes de alta calidad, optimizadas para todos los dispositivos.
+---
 
-Instalación y Uso
+## Validaciones del Formulario
 
-Clona el repositorio:
-git clone https://github.com/Kath-Valenzula/kath-interfaz-juegos-mesa.git
+El formulario de registro cumple los siguientes requisitos:
 
-Abre el archivo principal:
+* Todos los campos, excepto la dirección de despacho, son obligatorios.
+* El correo electrónico debe ser válido.
+* Las contraseñas deben coincidir, tener entre 6 y 18 caracteres, contener al menos una letra mayúscula y un número.
+* El usuario debe tener al menos 13 años para poder registrarse.
+* Los campos con errores se remarcan visualmente, y se entregan mensajes personalizados de advertencia o éxito.
 
-Navega a la carpeta del proyecto.
-Haz doble clic en index.html para abrirlo en tu navegador.
-No requiere dependencias externas ni instalación adicional.
+---
 
-Funcionalidades Destacadas
+## Personalización del Logo
 
-Diseño completamente responsivo.
-Accesibilidad básica: navegación clara, etiquetas semánticas y textos alternativos en imágenes.
-Animaciones suaves para una interacción amigable.
-Formulario de contacto estilizado y funcional.
-Código modular y limpio para facilitar futuras ampliaciones, como carrito de compras o integración con API de catálogo.
+Para cambiar el logo de la tienda:
 
-Tecnologías Utilizadas
+* Reemplazar el archivo `img/kath.cl.png` por la imagen deseada.
+* Ajustar el tamaño modificando el atributo `height` en el bloque correspondiente del header en `index.html`.
 
-HTML5 semántico
-CSS3 (variables, Grid, Flexbox, animaciones, media queries)
-JavaScript (interactividad básica y dinámica de formularios)
+---
 
-Extensibilidad
+## Publicación en GitHub Pages
 
-El proyecto ha sido concebido con una arquitectura modular y ordenada, ideal para futuras ampliaciones:
+Para publicar el sitio:
 
-Integración de carrito de compras y métodos de pago.
-Conexión a APIs externas para gestión de inventario o catálogo.
-Mejora de la experiencia de usuario con nuevas animaciones o filtros de productos.
+1. Ingresar a la pestaña **Settings > Pages** del repositorio en GitHub.
+2. Seleccionar la rama `main` y la carpeta `/ (root)` como fuente.
+3. Guardar los cambios y acceder a la URL proporcionada por GitHub Pages.
 
-Créditos
-Desarrollado como parte de la asignatura Desarrollo Full Stack II (DSY2202) – Duoc UC.
 
-Contacto del Desarrollador
-Kath Stark
-Correo: katherinevalenzuela91@gmail.com
-Repositorio: github.com/Kath-Valenzula/kath-interfaz-juegos-mesa
-Ciudad: Valparaíso, Chile
+---
+
+## Autoría
+
+* **Katherine Valenzuela**
+  Duoc UC | Desarrollo Full Stack II (DSY2202)
+  [GitHub](https://github.com/Kath-Valenzula)
+
+---
+
+## Licencia
+
+Este proyecto es de carácter académico y no comercial. Todos los derechos reservados a su autora y a la institución respectiva.
+
+---
