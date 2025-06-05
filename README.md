@@ -1,6 +1,6 @@
-# KATH.cl – Interfaz Web para Tienda de Juegos de Mesa
+Interfaz Web para Tienda de Juegos de Mesa
 
-Este repositorio contiene el desarrollo de una aplicación web para la tienda ficticia **KATH.cl**, realizada como parte de la asignatura 
+Este repositorio contiene el desarrollo de una aplicación web para la tienda ficticia , realizada como parte de la asignatura 
 ---
 
 ## Descripción General
