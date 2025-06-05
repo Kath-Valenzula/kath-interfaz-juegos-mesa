@@ -1,7 +1,6 @@
 # KATH.cl – Interfaz Web para Tienda de Juegos de Mesa
 
-Este repositorio contiene el desarrollo de una aplicación web para la tienda ficticia **KATH.cl**, realizada como parte de la asignatura **Desarrollo Full Stack II (DSY2202)** en Duoc UC.
-
+Este repositorio contiene el desarrollo de una aplicación web para la tienda ficticia **KATH.cl**, realizada como parte de la asignatura 
 ---
 
 ## Descripción General
@@ -111,8 +110,7 @@ Para publicar el sitio:
 
 ## Autoría
 
-* **Katherine Valenzuela**
-  Duoc UC | Desarrollo Full Stack II (DSY2202)
+* **Kath**
   [GitHub](https://github.com/Kath-Valenzula)
 
 ---
